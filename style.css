@@ -1,0 +1,70 @@
+:root{
+    --background: #2c3440;
+    --darkBackground: #1E232B;
+    --myWhite: #F5FEFD;
+
+    font-size: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+}
+
+header{
+    background-color: var(--darkBackground);
+    padding: 1rem;
+}
+
+#Logo{
+    color: var(--myWhite);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    display: inline-block; 
+}
+
+#menuButtons{
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.menuButtons{
+    border: none;
+    background-color: var(--darkBackground);
+    color: var(--myWhite);
+    margin: 5px;
+    padding: 5px;
+}
+
+.menuButtons:hover{
+    background-color: var(--background);
+}
+
+#userButtons{
+    display: inline-block; 
+    position: absolute;
+    right: 0;
+}
+
+.userButtons{
+    border: none;
+    background-color: var(--background);
+    color: var(--myWhite);
+    padding: 5px;
+    margin-right: 1rem;
+}
+
+@media (max-width: 800px){
+    .menuButtons{
+        border: none;
+        background-color: green;
+        color: var(--myWhite);
+        margin: 5px;
+        padding: 5px;
+    }
+}
